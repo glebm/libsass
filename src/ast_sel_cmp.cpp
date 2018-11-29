@@ -832,15 +832,11 @@ namespace Sass {
 
   bool Type_Selector::operator< (const Type_Selector& rhs) const
   {
-    if (is_ns_eq(rhs))
-    { 
-      if (rhs.has_ns_ && has_ns_)
-        return name() < rhs.name();
-      if (!rhs.has_ns_ && !has_ns_)
-        return name() < rhs.name();
-      return true;
-    }
-    return ns() < rhs.ns();
+    return has_ns_ == rhs.has_ns_
+      ? (ns_ == rhs.ns_
+         ? name_ < rhs.name_
+         : ns_ < rhs.ns_)
+      : has_ns_ < rhs.has_ns_;
   }
 
   bool Class_Selector::operator< (const Class_Selector& rhs) const

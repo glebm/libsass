@@ -148,16 +148,7 @@ namespace Sass {
   // namespace compare functions
   bool Simple_Selector::is_ns_eq(const Simple_Selector& r) const
   {
-    // https://github.com/sass/sass/issues/2229
-    if ((has_ns_ == r.has_ns_) ||
-        (has_ns_ && ns_.empty()) ||
-        (r.has_ns_ && r.ns_.empty())
-    ) {
-      if (ns_.empty() && r.ns() == "*") return false;
-      else if (r.ns().empty() && ns() == "*") return false;
-      else return ns() == r.ns();
-    }
-    return false;
+    return has_ns_ == r.has_ns_ && ns_ == r.ns_;
   }
 
   // namespace query functions
