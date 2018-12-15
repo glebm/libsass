@@ -1,18 +1,21 @@
 #ifndef SASS_EXPAND_H
 #define SASS_EXPAND_H
 
+#include <stddef.h>
 #include <vector>
 
 #include "ast.hpp"
+#include "ast_fwd_decl.hpp"
+#include "backtrace.hpp"
+#include "environment.hpp"
 #include "eval.hpp"
 #include "operation.hpp"
-#include "environment.hpp"
 
 namespace Sass {
 
-  class Listize;
   class Context;
   class Eval;
+  class Listize;
   struct Backtrace;
 
   class Expand : public Operation_CRTP<Statement_Ptr, Expand> {

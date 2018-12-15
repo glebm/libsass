@@ -1,6 +1,19 @@
-#include "sass.hpp"
+#include <ctype.h>
+#include <stddef.h>
+#include <algorithm>
+#include <ostream>
+
 #include "ast.hpp"
+#include "ast_selectors.hpp"
+#include "ast_supports.hpp"
+#include "ast_values.hpp"
+#include "emitter.hpp"
+#include "error_handling.hpp"
+#include "file.hpp"
+#include "memory/SharedPtr.hpp"
 #include "output.hpp"
+#include "position.hpp"
+#include "sass.hpp"
 #include "util.hpp"
 
 namespace Sass {

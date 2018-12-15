@@ -1,11 +1,11 @@
 #ifndef SASS_MEMORY_SHARED_PTR_H
 #define SASS_MEMORY_SHARED_PTR_H
 
-#include "sass/base.h"
-
 #include <iostream>
 #include <string>
 #include <vector>
+
+#include "sass/base.h"
 
 namespace Sass {
 

@@ -1,4 +1,8 @@
+#include "lexer.hpp"
 #include "sass.hpp"
+#include "sass/context.h"
+#include "sass/functions.h"
+#include "sass_context.hpp"
 #ifdef _WIN32
 # ifdef __MINGW32__
 #  ifndef off64_t
@@ -6,30 +10,33 @@
 #  endif
 # endif
 # include <direct.h>
+
 # define S_ISDIR(mode) (((mode) & S_IFMT) == S_IFDIR)
 #else
 # include <unistd.h>
 #endif
-#include <iostream>
-#include <fstream>
-#include <cctype>
-#include <vector>
-#include <algorithm>
+#include <stdlib.h>
 #include <sys/stat.h>
-#include "file.hpp"
+#include <algorithm>
+#include <cctype>
+#include <fstream>
+#include <memory>
+#include <vector>
+
 #include "context.hpp"
-#include "prelexer.hpp"
-#include "utf8_string.hpp"
-#include "sass_functions.hpp"
 #include "error_handling.hpp"
-#include "util.hpp"
+#include "file.hpp"
+#include "prelexer.hpp"
 #include "sass2scss.h"
+#include "sass_functions.hpp"
+#include "util.hpp"
 
 #ifdef _WIN32
 # include <windows.h>
 
 # ifdef _MSC_VER
 # include <codecvt>
+
 inline static std::string wstring_to_string(const std::wstring& wstr)
 {
     std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> wchar_converter;

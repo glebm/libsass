@@ -1,10 +1,13 @@
 #ifndef SASS_PLUGINS_H
 #define SASS_PLUGINS_H
 
+#include <dlfcn.h>
+#include <stddef.h>
 #include <string>
 #include <vector>
-#include "utf8_string.hpp"
+
 #include "sass/functions.h"
+#include "utf8_string.hpp"
 
 #ifdef _WIN32
 

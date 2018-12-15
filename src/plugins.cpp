@@ -1,15 +1,14 @@
-#include "sass.hpp"
+#include <string.h>
 #include <iostream>
-#include "output.hpp"
+
 #include "plugins.hpp"
+#include "sass/base.h"
 #include "util.hpp"
 
 #ifdef _WIN32
 #include <windows.h>
 #else
-#include <sys/types.h>
 #include <dirent.h>
-#include <errno.h>
 #include <dlfcn.h>
 #endif
 

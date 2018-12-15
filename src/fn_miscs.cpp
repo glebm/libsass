@@ -1,7 +1,25 @@
+#include <stddef.h>
+#include <iostream>
+#include <set>
+#include <string>
+
 #include "ast.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_values.hpp"
+#include "context.hpp"
+#include "emitter.hpp"
+#include "environment.hpp"
+#include "error_handling.hpp"
+#include "eval.hpp"
 #include "expand.hpp"
-#include "fn_utils.hpp"
 #include "fn_miscs.hpp"
+#include "fn_utils.hpp"
+#include "inspect.hpp"
+#include "memory/SharedPtr.hpp"
+#include "sass.hpp"
+#include "sass/base.h"
+#include "sass_context.hpp"
+#include "util.hpp"
 
 namespace Sass {
 

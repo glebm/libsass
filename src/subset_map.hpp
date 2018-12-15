@@ -1,11 +1,13 @@
 #ifndef SASS_SUBSET_MAP_H
 #define SASS_SUBSET_MAP_H
 
-#include <map>
-#include <set>
-#include <vector>
+#include <stddef.h>
 #include <algorithm>
 #include <iterator>
+#include <map>
+#include <set>
+#include <utility>
+#include <vector>
 
 #include "ast_fwd_decl.hpp"
 

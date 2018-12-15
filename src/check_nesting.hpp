@@ -1,7 +1,13 @@
 #ifndef SASS_CHECK_NESTING_H
 #define SASS_CHECK_NESTING_H
 
+#include <vector>
+
 #include "ast.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_supports.hpp"
+#include "ast_values.hpp"
+#include "backtrace.hpp"
 #include "operation.hpp"
 
 namespace Sass {

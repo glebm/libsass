@@ -1,9 +1,12 @@
 #ifndef SASS_ENVIRONMENT_H
 #define SASS_ENVIRONMENT_H
 
+#include <map>
 #include <string>
-#include "ast_fwd_decl.hpp"
+#include <vector>
+
 #include "ast_def_macros.hpp"
+#include "ast_fwd_decl.hpp"
 
 namespace Sass {
 

@@ -1,21 +1,28 @@
+#include <stdint.h>
+#include <cmath>
 #include <cstdint>
 #include <cstdlib>
-#include <cmath>
-#include <cctype>
+#include <iomanip>
 #include <random>
 #include <sstream>
-#include <iomanip>
-#include <algorithm>
+#include <string>
 
 #include "ast.hpp"
-#include "sass.hpp"
-#include "units.hpp"
-#include "fn_utils.hpp"
+#include "ast_values.hpp"
+#include "backtrace.hpp"
+#include "context.hpp"
+#include "environment.hpp"
+#include "error_handling.hpp"
 #include "fn_numbers.hpp"
+#include "fn_utils.hpp"
+#include "memory/SharedPtr.hpp"
+#include "sass_context.hpp"
+#include "units.hpp"
+#include "util.hpp"
 
 #ifdef __MINGW32__
-#include "windows.h"
 #include "wincrypt.h"
+#include "windows.h"
 #endif
 
 namespace Sass {

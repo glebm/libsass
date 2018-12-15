@@ -1,7 +1,24 @@
-#include "listize.hpp"
-#include "operators.hpp"
-#include "fn_utils.hpp"
+#include <stddef.h>
+#include <algorithm>
+#include <cmath>
+#include <string>
+#include <type_traits>
+#include <utility>
+#include <vector>
+
+#include "ast.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_selectors.hpp"
+#include "ast_values.hpp"
+#include "environment.hpp"
+#include "error_handling.hpp"
 #include "fn_lists.hpp"
+#include "fn_utils.hpp"
+#include "listize.hpp"
+#include "memory/SharedPtr.hpp"
+#include "operators.hpp"
+#include "sass/values.h"
+#include "util.hpp"
 
 namespace Sass {
 

@@ -1,10 +1,17 @@
 #ifndef SASS_CSSIZE_H
 #define SASS_CSSIZE_H
 
+#include <utility>
+#include <vector>
+
 #include "ast.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_supports.hpp"
+#include "ast_values.hpp"
+#include "backtrace.hpp"
 #include "context.hpp"
-#include "operation.hpp"
 #include "environment.hpp"
+#include "operation.hpp"
 
 namespace Sass {
 

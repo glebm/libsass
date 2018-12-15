@@ -1,10 +1,14 @@
-#include "sass.hpp"
+#include <stdlib.h>
 #include <cstring>
-#include "util.hpp"
-#include "context.hpp"
-#include "values.hpp"
+
+#include "ast.hpp"
+#include "ast_fwd_decl.hpp"
+#include "memory/SharedPtr.hpp"
+#include "sass/base.h"
 #include "sass/functions.h"
+#include "sass2scss.h"
 #include "sass_functions.hpp"
+#include "values.hpp"
 
 extern "C" {
   using namespace Sass;

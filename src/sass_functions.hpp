@@ -1,9 +1,12 @@
 #ifndef SASS_SASS_FUNCTIONS_H
 #define SASS_SASS_FUNCTIONS_H
 
-#include "sass.h"
+#include <stddef.h>
+
 #include "environment.hpp"
 #include "fn_utils.hpp"
+#include "sass.h"
+#include "sass/functions.h"
 
 // Struct to hold custom function callback
 struct Sass_Function {

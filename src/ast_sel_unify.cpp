@@ -1,21 +1,18 @@
-#include "sass.hpp"
-#include "ast.hpp"
-#include "context.hpp"
-#include "node.hpp"
-#include "eval.hpp"
-#include "extend.hpp"
-#include "emitter.hpp"
-#include "color_maps.hpp"
-#include "ast_fwd_decl.hpp"
-#include <set>
-#include <iomanip>
-#include <iostream>
+#include <stddef.h>
 #include <algorithm>
-#include <functional>
-#include <cctype>
-#include <locale>
+#include <deque>
+#include <iterator>
+#include <memory>
+#include <string>
+#include <vector>
 
+#include "ast.hpp"
+#include "ast_fwd_decl.hpp"
 #include "ast_selectors.hpp"
+#include "extend.hpp"
+#include "memory/SharedPtr.hpp"
+#include "node.hpp"
+#include "util.hpp"
 
 // #define DEBUG_UNIFY
 

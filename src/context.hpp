@@ -1,27 +1,33 @@
 #ifndef SASS_CONTEXT_H
 #define SASS_CONTEXT_H
 
+#include <stddef.h>
+#include <map>
 #include <string>
 #include <vector>
-#include <map>
 
 #define BUFFERSIZE 255
+#include "ast_fwd_decl.hpp"
+#include "ast_fwd_decl.hpp"
 #include "b64/encode.h"
-
-#include "ast_fwd_decl.hpp"
-#include "kwd_arg_macros.hpp"
-#include "ast_fwd_decl.hpp"
-#include "sass_context.hpp"
-#include "environment.hpp"
-#include "source_map.hpp"
-#include "subset_map.hpp"
 #include "backtrace.hpp"
+#include "environment.hpp"
+#include "file.hpp"
+#include "kwd_arg_macros.hpp"
 #include "output.hpp"
 #include "plugins.hpp"
-#include "file.hpp"
+#include "sass/base.h"
+#include "sass/functions.h"
+#include "sass_context.hpp"
+#include "sass_functions.hpp"
+#include "source_map.hpp"
+#include "subset_map.hpp"
 
-
+namespace Sass {
+class ParserState;
+}  // namespace Sass
 struct Sass_Function;
+struct string_list;
 
 namespace Sass {
 

@@ -1,8 +1,11 @@
-#include "sass.hpp"
+#include <stddef.h>
+#include <vector>
+
+#include "ast.hpp"
+#include "ast_selectors.hpp"
+#include "ast_supports.hpp"
+#include "memory/SharedPtr.hpp"
 #include "remove_placeholders.hpp"
-#include "context.hpp"
-#include "inspect.hpp"
-#include <iostream>
 
 namespace Sass {
 

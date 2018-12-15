@@ -1,35 +1,40 @@
 #ifndef SASS_AST_H
 #define SASS_AST_H
 
-#include "sass.hpp"
-#include <set>
-#include <deque>
-#include <vector>
-#include <string>
-#include <sstream>
-#include <iostream>
-#include <typeinfo>
+#include <stddef.h>
 #include <algorithm>
-#include "sass/base.h"
-#include "ast_fwd_decl.hpp"
+#include <deque>
+#include <functional>
+#include <iostream>
+#include <set>
+#include <sstream>
+#include <string>
+#include <system_error>
+#include <typeinfo>
+#include <unordered_map>
+#include <utility>
+#include <vector>
 
-#include "util.hpp"
-#include "units.hpp"
-#include "context.hpp"
-#include "position.hpp"
-#include "constants.hpp"
-#include "operation.hpp"
-#include "position.hpp"
-#include "inspect.hpp"
-#include "source_map.hpp"
-#include "environment.hpp"
-#include "error_handling.hpp"
 #include "ast_def_macros.hpp"
 #include "ast_fwd_decl.hpp"
-#include "source_map.hpp"
+#include "constants.hpp"
+#include "context.hpp"
+#include "environment.hpp"
+#include "error_handling.hpp"
+#include "file.hpp"
 #include "fn_utils.hpp"
-
+#include "inspect.hpp"
+#include "memory/SharedPtr.hpp"
+#include "operation.hpp"
+#include "position.hpp"
 #include "sass.h"
+#include "sass.hpp"
+#include "sass/base.h"
+#include "sass/functions.h"
+#include "sass/values.h"
+#include "source_map.hpp"
+#include "units.hpp"
+#include "util.hpp"
 
 namespace Sass {
 
@@ -926,9 +931,9 @@ namespace Sass {
 
 }
 
-#include "ast_values.hpp"
-#include "ast_supports.hpp"
 #include "ast_selectors.hpp"
+#include "ast_supports.hpp"
+#include "ast_values.hpp"
 
 #ifdef __clang__
 

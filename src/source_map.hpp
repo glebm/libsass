@@ -1,13 +1,14 @@
 #ifndef SASS_SOURCE_MAP_H
 #define SASS_SOURCE_MAP_H
 
+#include <stddef.h>
 #include <string>
 #include <vector>
 
 #include "ast_fwd_decl.hpp"
 #include "base64vlq.hpp"
-#include "position.hpp"
 #include "mapping.hpp"
+#include "position.hpp"
 
 #define VECTOR_PUSH(vec, ins) vec.insert(vec.end(), ins.begin(), ins.end())
 #define VECTOR_UNSHIFT(vec, ins) vec.insert(vec.begin(), ins.begin(), ins.end())

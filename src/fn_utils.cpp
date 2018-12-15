@@ -1,7 +1,18 @@
-#include "sass.hpp"
-#include "parser.hpp"
+#include <algorithm>
+#include <ostream>
+
+#include "ast.hpp"
+#include "ast_selectors.hpp"
+#include "ast_values.hpp"
+#include "constants.hpp"
+#include "context.hpp"
 #include "fn_utils.hpp"
-#include "functions.hpp"
+#include "lexer.hpp"
+#include "memory/SharedPtr.hpp"
+#include "parser.hpp"
+#include "prelexer.hpp"
+#include "sass_context.hpp"
+#include "util.hpp"
 
 namespace Sass {
 

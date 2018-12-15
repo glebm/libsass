@@ -2,8 +2,8 @@
 #define SASS_UNITS_H
 
 #include <cmath>
-#include <string>
 #include <sstream>
+#include <string>
 #include <vector>
 
 namespace Sass {

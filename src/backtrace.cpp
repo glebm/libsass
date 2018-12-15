@@ -1,4 +1,8 @@
+#include <stddef.h>
+#include <sstream>
+
 #include "backtrace.hpp"
+#include "file.hpp"
 
 namespace Sass {
 

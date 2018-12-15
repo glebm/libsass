@@ -1,14 +1,7 @@
-#include "sass.hpp"
-#include <cctype>
-#include <iostream>
-#include <iomanip>
 #include "lexer.hpp"
-#include "constants.hpp"
 
 
 namespace Sass {
-  using namespace Constants;
-
   namespace Prelexer {
 
     //####################################

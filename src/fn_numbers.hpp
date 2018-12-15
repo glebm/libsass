@@ -1,6 +1,7 @@
 #ifndef SASS_FN_NUMBERS_H
 #define SASS_FN_NUMBERS_H
 
+#include "ast_fwd_decl.hpp"
 #include "fn_utils.hpp"
 
 namespace Sass {

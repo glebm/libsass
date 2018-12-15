@@ -1,13 +1,18 @@
-#include "sass.hpp"
-#include "bind.hpp"
-#include "ast.hpp"
-#include "backtrace.hpp"
-#include "context.hpp"
-#include "expand.hpp"
-#include "eval.hpp"
-#include <map>
+#include <stddef.h>
 #include <iostream>
-#include <sstream>
+#include <map>
+#include <stdexcept>
+#include <vector>
+
+#include "ast.hpp"
+#include "ast_values.hpp"
+#include "backtrace.hpp"
+#include "bind.hpp"
+#include "error_handling.hpp"
+#include "eval.hpp"
+#include "memory/SharedPtr.hpp"
+#include "sass/values.h"
+#include "util.hpp"
 
 namespace Sass {
 

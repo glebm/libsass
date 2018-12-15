@@ -1,15 +1,34 @@
-#include "sass.hpp"
 #include <iostream>
-#include <typeinfo>
+#include <map>
+#include <stdexcept>
+#include <string>
+#include <utility>
+#include <vector>
 
 #include "ast.hpp"
-#include "expand.hpp"
-#include "bind.hpp"
-#include "eval.hpp"
+#include "ast_def_macros.hpp"
+#include "ast_selectors.hpp"
+#include "ast_supports.hpp"
+#include "ast_values.hpp"
 #include "backtrace.hpp"
+#include "bind.hpp"
 #include "context.hpp"
+#include "error_handling.hpp"
+#include "eval.hpp"
+#include "expand.hpp"
+#include "file.hpp"
+#include "listize.hpp"
+#include "memory/SharedPtr.hpp"
 #include "parser.hpp"
+#include "position.hpp"
+#include "prelexer.hpp"
+#include "sass.hpp"
+#include "sass/base.h"
+#include "sass/functions.h"
+#include "sass/values.h"
+#include "sass_context.hpp"
 #include "sass_functions.hpp"
+#include "subset_map.hpp"
 
 namespace Sass {
 

@@ -1,6 +1,10 @@
-#include "sass.hpp"
-#include "ast.hpp"
+#include <ctype.h>
+#include <algorithm>
+#include <map>
+#include <utility>
+
 #include "color_maps.hpp"
+#include "position.hpp"
 
 namespace Sass {
 

@@ -1,21 +1,15 @@
-#include "sass.hpp"
-#include "ast.hpp"
-#include "context.hpp"
-#include "node.hpp"
-#include "eval.hpp"
-#include "extend.hpp"
-#include "emitter.hpp"
-#include "color_maps.hpp"
-#include "ast_fwd_decl.hpp"
-#include <set>
-#include <iomanip>
-#include <iostream>
+#include <stddef.h>
 #include <algorithm>
-#include <functional>
-#include <cctype>
-#include <locale>
+#include <stdexcept>
+#include <string>
+#include <unordered_set>
+#include <vector>
 
+#include "ast.hpp"
+#include "ast_fwd_decl.hpp"
 #include "ast_selectors.hpp"
+#include "ast_values.hpp"
+#include "memory/SharedPtr.hpp"
 
 namespace Sass {
 

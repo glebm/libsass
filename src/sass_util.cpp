@@ -1,4 +1,6 @@
-#include "sass.hpp"
+#include <deque>
+#include <memory>
+
 #include "node.hpp"
 
 namespace Sass {

@@ -1,16 +1,22 @@
 #ifndef SASS_EVAL_H
 #define SASS_EVAL_H
 
+#include <string>
+
 #include "ast.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_selectors.hpp"
+#include "backtrace.hpp"
 #include "context.hpp"
+#include "environment.hpp"
 #include "listize.hpp"
 #include "operation.hpp"
-#include "environment.hpp"
+#include "sass.hpp"
 
 namespace Sass {
 
-  class Expand;
   class Context;
+  class Expand;
 
   class Eval : public Operation_CRTP<Expression_Ptr, Eval> {
 

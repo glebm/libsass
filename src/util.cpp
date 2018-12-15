@@ -1,14 +1,21 @@
-#include "sass.hpp"
-#include "sass.h"
-#include "ast.hpp"
-#include "util.hpp"
-#include "lexer.hpp"
-#include "prelexer.hpp"
-#include "constants.hpp"
-#include "utf8/checked.h"
-
-#include <cmath>
 #include <stdint.h>
+#include <ctype.h>
+#include <locale.h>
+#include <stdlib.h>
+#include <cmath>
+#include <memory>
+
+#include "ast.hpp"
+#include "ast_selectors.hpp"
+#include "ast_supports.hpp"
+#include "ast_values.hpp"
+#include "constants.hpp"
+#include "lexer.hpp"
+#include "memory/SharedPtr.hpp"
+#include "prelexer.hpp"
+#include "sass.hpp"
+#include "utf8/checked.h"
+#include "util.hpp"
 #if defined(_MSC_VER) && _MSC_VER >= 1800 && _MSC_VER < 1900 && defined(_M_X64)
 #include <mutex>
 #endif

@@ -1,7 +1,10 @@
-#include "sass.hpp"
+#include <stddef.h>
+#include <string>
 #include <vector>
 
 #include "check_nesting.hpp"
+#include "error_handling.hpp"
+#include "memory/SharedPtr.hpp"
 
 namespace Sass {
 

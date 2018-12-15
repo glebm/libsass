@@ -1,13 +1,18 @@
-#include "sass.hpp"
-#include "parser.hpp"
-#include "file.hpp"
-#include "inspect.hpp"
-#include "constants.hpp"
-#include "util.hpp"
-#include "prelexer.hpp"
+#include "ast_def_macros.hpp"
+#include "ast_selectors.hpp"
+#include "ast_supports.hpp"
 #include "color_maps.hpp"
-#include "sass/functions.h"
+#include "constants.hpp"
+#include "context.hpp"
 #include "error_handling.hpp"
+#include "parser.hpp"
+#include "prelexer.hpp"
+#include "sass.hpp"
+#include "sass/base.h"
+#include "sass/values.h"
+#include "utf8/checked.h"
+#include "utf8/core.h"
+#include "util.hpp"
 
 // Notes about delayed: some ast nodes can have delayed evaluation so
 // they can preserve their original semantics if needed. This is most
@@ -21,10 +26,12 @@
 // Another case with delayed values are colors. In compressed mode
 // only processed values get compressed (other are left as written).
 
+#include <string.h>
 #include <cstdlib>
-#include <iostream>
+#include <memory>
+#include <stdexcept>
+#include <utility>
 #include <vector>
-#include <typeinfo>
 
 namespace Sass {
   using namespace Constants;

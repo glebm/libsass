@@ -1,7 +1,24 @@
-#include "parser.hpp"
+#include <stddef.h>
+#include <ostream>
+#include <string>
+#include <vector>
+
+#include "ast.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_selectors.hpp"
+#include "ast_values.hpp"
+#include "context.hpp"
+#include "error_handling.hpp"
 #include "extend.hpp"
-#include "fn_utils.hpp"
 #include "fn_selectors.hpp"
+#include "fn_utils.hpp"
+#include "listize.hpp"
+#include "memory/SharedPtr.hpp"
+#include "parser.hpp"
+#include "position.hpp"
+#include "sass/values.h"
+#include "sass_context.hpp"
+#include "subset_map.hpp"
 
 namespace Sass {
 

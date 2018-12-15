@@ -1,5 +1,18 @@
-#include "sass.hpp"
+#include <stddef.h>
+#include <cmath>
+#include <string>
+#include <vector>
+
+#include "ast.hpp"
+#include "error_handling.hpp"
+#include "memory/SharedPtr.hpp"
 #include "operators.hpp"
+#include "sass.hpp"
+#include "util.hpp"
+
+namespace Sass {
+class ParserState;
+}  // namespace Sass
 
 namespace Sass {
 

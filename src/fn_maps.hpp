@@ -1,6 +1,7 @@
 #ifndef SASS_FN_MAPS_H
 #define SASS_FN_MAPS_H
 
+#include "ast_fwd_decl.hpp"
 #include "fn_utils.hpp"
 
 namespace Sass {

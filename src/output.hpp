@@ -4,9 +4,13 @@
 #include <string>
 #include <vector>
 
-#include "util.hpp"
+#include "ast_fwd_decl.hpp"
 #include "inspect.hpp"
 #include "operation.hpp"
+#include "source_map.hpp"
+#include "util.hpp"
+
+struct Sass_Output_Options;
 
 namespace Sass {
   class Context;

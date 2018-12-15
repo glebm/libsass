@@ -1,6 +1,15 @@
-#include "operators.hpp"
-#include "fn_utils.hpp"
+#include <stddef.h>
+#include <stdexcept>
+#include <utility>
+#include <vector>
+
+#include "ast.hpp"
+#include "ast_values.hpp"
 #include "fn_maps.hpp"
+#include "fn_utils.hpp"
+#include "memory/SharedPtr.hpp"
+#include "operators.hpp"
+#include "sass/values.h"
 
 namespace Sass {
 

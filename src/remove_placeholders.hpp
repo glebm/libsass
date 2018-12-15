@@ -4,6 +4,7 @@
 #pragma once
 
 #include "ast.hpp"
+#include "ast_fwd_decl.hpp"
 #include "operation.hpp"
 
 namespace Sass {

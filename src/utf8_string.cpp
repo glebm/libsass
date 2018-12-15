@@ -1,10 +1,8 @@
-#include "sass.hpp"
-#include <string>
-#include <vector>
 #include <cstdlib>
-#include <cmath>
+#include <iterator>
+#include <string>
 
-#include "utf8.h"
+#include "utf8/checked.h"
 
 namespace Sass {
   namespace UTF_8 {

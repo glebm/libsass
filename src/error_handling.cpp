@@ -1,10 +1,14 @@
-#include "sass.hpp"
+#include <iostream>
+#include <sstream>
+
 #include "ast.hpp"
-#include "prelexer.hpp"
+#include "ast_selectors.hpp"
+#include "ast_values.hpp"
 #include "backtrace.hpp"
 #include "error_handling.hpp"
-
-#include <iostream>
+#include "file.hpp"
+#include "memory/SharedPtr.hpp"
+#include "sass.hpp"
 
 namespace Sass {
 

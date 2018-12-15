@@ -1,17 +1,22 @@
 #ifndef SASS_EXTEND_H
 #define SASS_EXTEND_H
 
-#include <string>
 #include <set>
+#include <string>
+#include <unordered_map>
 
 #include "ast.hpp"
-#include "node.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_selectors.hpp"
 #include "eval.hpp"
+#include "node.hpp"
 #include "operation.hpp"
 #include "subset_map.hpp"
-#include "ast_fwd_decl.hpp"
 
 namespace Sass {
+
+class Eval;
+class Subset_Map;
 
   Node subweave(Node& one, Node& two);
 

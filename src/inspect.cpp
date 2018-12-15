@@ -1,17 +1,21 @@
-#include "sass.hpp"
-#include <cmath>
-#include <string>
-#include <iostream>
+#include <stddef.h>
 #include <iomanip>
-#include <stdint.h>
-#include <stdint.h>
+#include <iostream>
+#include <string>
+#include <vector>
 
 #include "ast.hpp"
-#include "inspect.hpp"
-#include "context.hpp"
-#include "listize.hpp"
+#include "ast_def_macros.hpp"
+#include "ast_selectors.hpp"
+#include "ast_supports.hpp"
+#include "ast_values.hpp"
 #include "color_maps.hpp"
-#include "utf8/checked.h"
+#include "inspect.hpp"
+#include "listize.hpp"
+#include "memory/SharedPtr.hpp"
+#include "sass.hpp"
+#include "sass/values.h"
+#include "util.hpp"
 
 namespace Sass {
 

@@ -1,15 +1,18 @@
-#include "sass.hpp"
 #include <cstdlib>
 #include <cstring>
+#include <iostream>
 #include <vector>
-#include <sstream>
 
-#include "sass.h"
-#include "file.hpp"
-#include "util.hpp"
 #include "context.hpp"
+#include "file.hpp"
+#include "sass.hpp"
+#include "sass/context.h"
+#include "sass/functions.h"
+#include "sass/version.h"
+#include "sass2scss.h"
 #include "sass_context.hpp"
 #include "sass_functions.hpp"
+#include "util.hpp"
 
 namespace Sass {
 

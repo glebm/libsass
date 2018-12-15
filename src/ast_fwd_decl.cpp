@@ -1,4 +1,8 @@
 #include "ast.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_selectors.hpp"
+#include "ast_supports.hpp"
+#include "ast_values.hpp"
 
 namespace Sass {
 

@@ -2,8 +2,13 @@
 #ifndef SASS_COLOR_MAPS_H
 #define SASS_COLOR_MAPS_H
 
+#include <cstring>
 #include <map>
+#include <string>
+
 #include "ast.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_values.hpp"
 
 namespace Sass {
 

@@ -1,9 +1,13 @@
 #ifndef SASS_AST2C_H
 #define SASS_AST2C_H
 
+#include "ast.hpp"
 #include "ast_fwd_decl.hpp"
 #include "operation.hpp"
+#include "sass/functions.h"
 #include "sass/values.h"
+
+union Sass_Value;
 
 namespace Sass {
 

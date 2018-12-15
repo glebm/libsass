@@ -1,9 +1,28 @@
+#include <stddef.h>
 #include <cctype>
-#include "utf8.h"
+#include <cmath>
+#include <stdexcept>
+#include <string>
+
 #include "ast.hpp"
-#include "sass.hpp"
-#include "fn_utils.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_values.hpp"
+#include "backtrace.hpp"
+#include "context.hpp"
+#include "environment.hpp"
+#include "error_handling.hpp"
 #include "fn_strings.hpp"
+#include "fn_utils.hpp"
+#include "memory/SharedPtr.hpp"
+#include "sass/base.h"
+#include "sass_context.hpp"
+#include "utf8/checked.h"
+#include "utf8_string.hpp"
+#include "util.hpp"
+
+namespace Sass {
+class ParserState;
+}  // namespace Sass
 
 namespace Sass {
 

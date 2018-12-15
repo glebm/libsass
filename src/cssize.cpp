@@ -1,10 +1,14 @@
-#include "sass.hpp"
-#include <iostream>
-#include <typeinfo>
+#include <stddef.h>
+#include <memory>
+#include <string>
+#include <type_traits>
 #include <vector>
 
 #include "cssize.hpp"
-#include "context.hpp"
+#include "error_handling.hpp"
+#include "memory/SharedPtr.hpp"
+#include "sass/values.h"
+#include "sass_context.hpp"
 
 namespace Sass {
 

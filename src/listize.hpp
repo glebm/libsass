@@ -1,13 +1,14 @@
 #ifndef SASS_LISTIZE_H
 #define SASS_LISTIZE_H
 
-#include <vector>
 #include <iostream>
+#include <vector>
 
 #include "ast.hpp"
+#include "ast_fwd_decl.hpp"
 #include "context.hpp"
-#include "operation.hpp"
 #include "environment.hpp"
+#include "operation.hpp"
 
 namespace Sass {
 

@@ -1,8 +1,10 @@
 #ifndef SASS_BACKTRACE_H
 #define SASS_BACKTRACE_H
 
-#include <vector>
 #include <sstream>
+#include <string>
+#include <vector>
+
 #include "file.hpp"
 #include "position.hpp"
 

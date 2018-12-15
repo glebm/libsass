@@ -1,9 +1,11 @@
-#include "sass.hpp"
+#include <stddef.h>
+#include <iterator>
+#include <memory>
+#include <string>
 #include <vector>
 
 #include "node.hpp"
-#include "context.hpp"
-#include "parser.hpp"
+#include "position.hpp"
 
 namespace Sass {
 

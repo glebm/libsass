@@ -1,5 +1,11 @@
-#include "sass.hpp"
+#include <stddef.h>
+#include <string>
+
 #include "ast.hpp"
+#include "ast_selectors.hpp"
+#include "context.hpp"
+#include "memory/SharedPtr.hpp"
+#include "sass_context.hpp"
 #include "to_value.hpp"
 
 namespace Sass {

@@ -1,12 +1,13 @@
-#include "sass.hpp"
+#include <stddef.h>
 #include <iostream>
-#include <typeinfo>
 #include <string>
+#include <vector>
 
+#include "ast_selectors.hpp"
+#include "ast_values.hpp"
 #include "listize.hpp"
-#include "context.hpp"
-#include "backtrace.hpp"
-#include "error_handling.hpp"
+#include "memory/SharedPtr.hpp"
+#include "sass/values.h"
 
 namespace Sass {
 

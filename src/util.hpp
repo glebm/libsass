@@ -1,15 +1,16 @@
 #ifndef SASS_UTIL_H
 #define SASS_UTIL_H
 
-#include "sass.hpp"
-#include "sass/base.h"
-#include "ast_fwd_decl.hpp"
-
-#include <cstring>
-#include <vector>
-#include <string>
 #include <assert.h>
 #include <math.h>
+#include <algorithm>
+#include <cstring>
+#include <string>
+#include <vector>
+
+#include "ast_fwd_decl.hpp"
+#include "sass.hpp"
+#include "sass/base.h"
 
 #define SASS_ASSERT(cond, msg) assert(cond && msg)
 

@@ -1,8 +1,15 @@
-#include "sass.hpp"
-#include "sass.h"
-#include "values.hpp"
+#include <stddef.h>
+#include <string>
+#include <type_traits>
+#include <utility>
+#include <vector>
 
-#include <stdint.h>
+#include "ast.hpp"
+#include "ast_values.hpp"
+#include "memory/SharedPtr.hpp"
+#include "position.hpp"
+#include "sass/values.h"
+#include "values.hpp"
 
 namespace Sass {
 

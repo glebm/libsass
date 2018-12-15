@@ -4,8 +4,8 @@
 #include <string>
 #include <vector>
 
-#include "sass/context.h"
 #include "ast_fwd_decl.hpp"
+#include "sass/context.h"
 
 namespace Sass {
 

@@ -1,15 +1,19 @@
 #ifndef SASS_AST_FWD_DECL_H
 #define SASS_AST_FWD_DECL_H
 
+#include <stddef.h>
+#include <algorithm>
+#include <deque>
+#include <iostream>
 #include <map>
 #include <set>
-#include <deque>
-#include <vector>
+#include <string>
 #include <typeinfo>
-#include <iostream>
-#include <algorithm>
 #include <unordered_map>
 #include <unordered_set>
+#include <utility>
+#include <vector>
+
 #include "memory/SharedPtr.hpp"
 #include "sass/functions.h"
 

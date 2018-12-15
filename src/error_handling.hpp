@@ -1,17 +1,23 @@
 #ifndef SASS_ERROR_HANDLING_H
 #define SASS_ERROR_HANDLING_H
 
-#include <string>
 #include <sstream>
 #include <stdexcept>
-#include "units.hpp"
-#include "position.hpp"
-#include "backtrace.hpp"
+#include <string>
+
 #include "ast_fwd_decl.hpp"
+#include "backtrace.hpp"
+#include "position.hpp"
+#include "sass/base.h"
 #include "sass/functions.h"
+#include "sass/values.h"
+#include "units.hpp"
 
 namespace Sass {
 
+  class AST_Node;
+  class Expression;
+  class Map;
   struct Backtrace;
 
   namespace Exception {

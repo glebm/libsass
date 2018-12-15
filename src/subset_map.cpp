@@ -1,5 +1,11 @@
-#include "sass.hpp"
+#include <algorithm>
+#include <iterator>
+#include <stdexcept>
+#include <unordered_set>
+
 #include "ast.hpp"
+#include "ast_selectors.hpp"
+#include "memory/SharedPtr.hpp"
 #include "subset_map.hpp"
 
 namespace Sass {

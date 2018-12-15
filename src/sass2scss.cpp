@@ -9,14 +9,15 @@
 #define _CRT_NONSTDC_NO_DEPRECATE
 #endif
 
+#include <ctype.h>
+#include <stdio.h>
+#include <cstdlib>
+#include <cstring>
+#include <iostream>
+#include <memory>
 // include library
 #include <stack>
 #include <string>
-#include <cstring>
-#include <cstdlib>
-#include <sstream>
-#include <iostream>
-#include <stdio.h>
 
 ///*
 //

@@ -1,8 +1,15 @@
 #ifndef SASS_OPERATORS_H
 #define SASS_OPERATORS_H
 
-#include "values.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_values.hpp"
 #include "sass/values.h"
+#include "values.hpp"
+
+namespace Sass {
+class Operand;
+class ParserState;
+}  // namespace Sass
 
 namespace Sass {
 

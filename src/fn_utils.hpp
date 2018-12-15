@@ -1,12 +1,18 @@
 #ifndef SASS_FN_UTILS_H
 #define SASS_FN_UTILS_H
-#include "units.hpp"
+#include <string>
+
+#include "ast_fwd_decl.hpp"
 #include "backtrace.hpp"
 #include "environment.hpp"
-#include "ast_fwd_decl.hpp"
 #include "error_handling.hpp"
+#include "position.hpp"
+#include "sass/functions.h"
+#include "units.hpp"
 
 namespace Sass {
+
+class Context;
 
   #define FN_PROTOTYPE \
     Env& env, \

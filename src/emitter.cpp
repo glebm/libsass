@@ -1,9 +1,9 @@
+#include <ctype.h>
+#include <vector>
+
+#include "emitter.hpp"
 #include "sass.hpp"
 #include "util.hpp"
-#include "context.hpp"
-#include "output.hpp"
-#include "emitter.hpp"
-#include "utf8_string.hpp"
 
 namespace Sass {
 

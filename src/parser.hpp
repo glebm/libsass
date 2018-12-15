@@ -1,14 +1,23 @@
 #ifndef SASS_PARSER_H
 #define SASS_PARSER_H
 
+#include <stddef.h>
 #include <string>
 #include <vector>
 
 #include "ast.hpp"
-#include "position.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_values.hpp"
+#include "backtrace.hpp"
 #include "context.hpp"
+#include "lexer.hpp"
+#include "memory/SharedPtr.hpp"
 #include "position.hpp"
 #include "prelexer.hpp"
+
+namespace Sass {
+class Context;
+}  // namespace Sass
 
 #ifndef MAX_NESTING
 // Note that this limit is not an exact science

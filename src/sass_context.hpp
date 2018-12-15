@@ -1,9 +1,17 @@
 #ifndef SASS_SASS_CONTEXT_H
 #define SASS_SASS_CONTEXT_H
 
+#include <stddef.h>
+
+#include "ast_fwd_decl.hpp"
+#include "sass.hpp"
 #include "sass/base.h"
 #include "sass/context.h"
-#include "ast_fwd_decl.hpp"
+#include "sass/functions.h"
+
+namespace Sass {
+class Context;
+}  // namespace Sass
 
 // sass config options structure
 struct Sass_Options : Sass_Output_Options {

@@ -1,11 +1,14 @@
 #ifndef SASS_EMITTER_H
 #define SASS_EMITTER_H
 
+#include <stddef.h>
 #include <string>
+
+#include "ast_fwd_decl.hpp"
+#include "position.hpp"
 #include "sass.hpp"
 #include "sass/base.h"
 #include "source_map.hpp"
-#include "ast_fwd_decl.hpp"
 
 namespace Sass {
   class Context;

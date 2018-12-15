@@ -3,8 +3,12 @@
 
 #include <deque>
 #include <memory>
+#include <utility>
 
 #include "ast.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_selectors.hpp"
+#include "memory/SharedPtr.hpp"
 
 
 namespace Sass {

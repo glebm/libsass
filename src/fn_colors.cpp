@@ -1,9 +1,26 @@
+#include <stddef.h>
+#include <algorithm>
 #include <cctype>
 #include <iomanip>
+#include <ostream>
+#include <string>
+#include <vector>
+
 #include "ast.hpp"
-#include "fn_utils.hpp"
+#include "ast_fwd_decl.hpp"
+#include "ast_values.hpp"
+#include "context.hpp"
+#include "environment.hpp"
+#include "error_handling.hpp"
 #include "fn_colors.hpp"
+#include "fn_utils.hpp"
+#include "memory/SharedPtr.hpp"
+#include "sass_context.hpp"
 #include "util.hpp"
+
+namespace Sass {
+class ParserState;
+}  // namespace Sass
 
 namespace Sass {
 

@@ -1,9 +1,12 @@
 #ifndef SASS_INSPECT_H
 #define SASS_INSPECT_H
 
-#include "position.hpp"
-#include "operation.hpp"
+#include <string>
+
+#include "ast_fwd_decl.hpp"
 #include "emitter.hpp"
+#include "operation.hpp"
+#include "position.hpp"
 
 namespace Sass {
   class Context;

@@ -1,6 +1,11 @@
-#include "sass.hpp"
-#include "ast2c.hpp"
+#include <stddef.h>
+#include <string>
+#include <vector>
+
 #include "ast.hpp"
+#include "ast2c.hpp"
+#include "ast_values.hpp"
+#include "memory/SharedPtr.hpp"
 
 namespace Sass {
 

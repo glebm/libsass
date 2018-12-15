@@ -1,13 +1,14 @@
-#include "sass.hpp"
+#include <stdlib.h>
+#include <memory>
+#include <stdexcept>
 #include <string>
-#include <sstream>
-#include <iostream>
-#include <iomanip>
 
 #include "ast.hpp"
-#include "json.hpp"
 #include "context.hpp"
+#include "file.hpp"
+#include "json.hpp"
 #include "position.hpp"
+#include "sass_context.hpp"
 #include "source_map.hpp"
 
 namespace Sass {

@@ -1,7 +1,10 @@
 #ifndef SASS_SASS_VALUES_H
 #define SASS_SASS_VALUES_H
 
+#include <stddef.h>
+
 #include "sass.h"
+#include "sass/values.h"
 
 struct Sass_Unknown {
   enum Sass_Tag tag;
